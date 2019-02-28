@@ -62,7 +62,7 @@ func (c *Container) Unlock() {
 	c.locker.Unlock()
 }
 
-// Get next item by index
+// Next gets next item by index
 func (c *Container) Next() (string, error) {
 	c.Lock()
 	defer c.Unlock()
